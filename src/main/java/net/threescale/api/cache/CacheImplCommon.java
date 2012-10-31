@@ -41,7 +41,7 @@ public abstract class CacheImplCommon implements ApiCache {
 
     private long authorizeExpirationTimeInMillis = 500L;
     private long reportExpirationTimeInMillis = 500L;
-    private long applicationExpirationTimeInMillis = 60000L;
+    private long applicationExpirationTimeInMillis = 60000L * 5L; // 5 minutes
     private long nextExpirationTime = new Date().getTime() + reportExpirationTimeInMillis;
 
 
